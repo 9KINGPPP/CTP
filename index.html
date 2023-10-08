@@ -19,7 +19,7 @@
         <div class="col-sm-6">
           <h1>ปั๊มน้ำ<span class="pull-right"><div id="light"></div></span></h1>
 
-          <button type="button" id="toggle" data-state="1" class="btn btn-danger">Toggle</button>
+          <button type="button" id="toggle" data-state="1" class="btn btn-danger">Toggle</button> <----- (กดเพื่อนเปลี่ยนสถานะ)
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -41,14 +41,14 @@
               light.removeClass('off');
               btn.addClass('btn-danger');
               btn.removeClass('btn-success');
-              btn.html('กด เปิด');
+              btn.html('ปิดอยู่');
             }else{
               btn.data('state', '1');
               light.addClass('off');
               light.removeClass('on');
               btn.addClass('btn-success');
               btn.removeClass('btn-danger');
-              btn.html('กด ปิด');
+              btn.html('เปิดอยู่');
             }
           }
         });
